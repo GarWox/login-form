@@ -1,0 +1,175 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 2.29vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: radial-gradient(circle, #77f, #204);
+  background-color: #ccc;
+}
+/* #c39 */
+
+.login-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: medium solid #aaf;
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  background-color: transparent;
+}
+
+h1 {
+  text-align: center;
+  /* margin-top: 0.5rem; */
+  margin-top: 5vh;
+  color: #e2c;
+}
+
+.logo {
+  /* margin: 1.15rem 0; */
+  margin: 2.63vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 25%;
+}
+
+.logo img {
+  max-width: 140px;
+  max-height: 140px;
+  min-width: 80px;
+  min-height: 80px;
+  width: 20%;
+  height: auto;
+}
+
+/* @keyframes shake {
+  0% {
+    transform: translate(-2px, 0);
+  }
+
+  25% {
+    transform: translate(4px, 0);
+  }
+
+  50% {
+    transform: translate(-4px, 0);
+  }
+
+  75% {
+    transform: translate(4px, 0);
+  }
+}
+
+input:invalid {
+  animation: shake 0.5s ease 1 both;
+} */
+
+.login-form {
+  display: flex;
+  flex-flow: column;
+}
+
+.input {
+  width: 50%;
+  align-self: center;
+  background-color: #fff3;
+  padding: 2px;
+  padding: 0.5vh;
+  max-width: 200px;
+  font-size: 2.29vh;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+  border-radius: 15px;
+  text-align: center;
+  transition: background-color 0.25s ease-in-out,
+    border-bottom 0.25s ease-in-out;
+}
+
+.input:hover {
+  background-color: #fff5;
+}
+
+.input:focus {
+  outline: none;
+  caret-color: #77c;
+  background-color: #fff5;
+}
+
+.submit-btn {
+  font-size: 2.29vh;
+  align-self: center;
+  width: 50%;
+  max-width: 200px;
+  /* height: 4ex; */
+  padding: 0.7vh;
+  border-radius: 15px;
+  border: none;
+  background-color: #c3f;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  box-shadow: 0px 1px 3px 3px #a0f;
+}
+
+.submit-btn::after {
+  content: "Login";
+}
+
+label {
+  margin: 7px 0;
+  margin: 1vh 0;
+}
+
+.login-menu a {
+  color: #000;
+  text-decoration: none;
+}
+
+.login-menu a:hover {
+  color: #ddd;
+}
+
+@media screen and (min-width: 576px) {
+  .login-menu {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .login-menu {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .login-menu {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .login-menu {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .login-menu {
+    width: 25%;
+  }
+}
